@@ -3,26 +3,83 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Octo · Scuba Theory, from Open Water to Divemaster</title>
-<meta name="description" content="Octo, the iPhone app to review scuba theory from Open Water Diver to Divemaster: short lessons, quizzes that explain, spaced reviews, a practice exam for each level and a Mega Quiz for dive club nights.">
+<title>Octo · Scuba diving theory and exam prep app</title>
+<meta name="description" content="iPhone app to learn scuba diving theory and prepare for your Open Water, Advanced, Rescue Diver and Divemaster exams: short lessons, explained quizzes, practice exams.">
 <link rel="canonical" href="https://prunob.github.io/octo/">
 <link rel="alternate" hreflang="en" href="https://prunob.github.io/octo/">
 <link rel="alternate" hreflang="fr" href="https://prunob.github.io/octo/fr/">
+<link rel="alternate" hreflang="x-default" href="https://prunob.github.io/octo/">
+<meta name="apple-itunes-app" content="app-id=6832103175">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Octo · Scuba theory, from Open Water to Divemaster">
+<meta property="og:url" content="https://prunob.github.io/octo/">
+<meta property="og:site_name" content="Octo">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="Octo · Scuba diving theory, from Open Water to Divemaster">
 <meta property="og:description" content="Short lessons, quizzes that explain, spaced reviews, practice exams and a Mega Quiz for dive club nights.">
-<meta property="og:image" content="images/en-01-home.jpg">
+<meta property="og:image" content="https://prunob.github.io/octo/images/en-01-home.jpg">
 <link rel="icon" href="images/icon.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "name": "Octo · Scuba Theory",
+  "url": "https://prunob.github.io/octo/",
+  "image": "https://prunob.github.io/octo/images/icon.png",
+  "screenshot": "https://prunob.github.io/octo/images/en-01-home.jpg",
+  "author": { "@type": "Person", "name": "Bruno Pennes" },
   "operatingSystem": "iOS 26",
   "applicationCategory": "EducationalApplication",
   "inLanguage": ["en", "fr"],
   "description": "Review scuba theory from Open Water Diver to Divemaster: lessons, quizzes with explanations, spaced reviews, practice exams and a team Mega Quiz.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Is Octo an official PADI app?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Octo is an independent app, not affiliated with or endorsed by PADI. It doesn’t replace your instructor or your training in the water: when in doubt, your instructor’s word comes first."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What does Octo cover?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The theory of four courses: Open Water Diver, Advanced Open Water, Rescue Diver and Divemaster. 62 lessons, 372 quiz questions, 130 exam scenarios and a 300-question Mega Quiz, in meters and bar or feet and psi."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do I need an account?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Your progress stays on your iPhone, with no account and no server."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is Octo free?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes: lessons, quizzes, reviews and practice exams are free, with a banner ad that never appears during a question. Octo Pro (one-time purchase) adds the Mega Quiz and removes all ads."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Which languages?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "English and French. Octo follows your iPhone’s language."
+   }
+  }
+ ]
 }
 </script>
 <style>
@@ -63,6 +120,7 @@
   footer { background: var(--nuit); color: #C9D3E6; font-size: 14px; }
   footer .wrap { padding-block: 28px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; }
   footer a { color: #F2F6FC; }
+  .grid4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   @media (max-width: 760px) {
     header .wrap, .mascot { grid-template-columns: 1fr; }
     .grid, .shots { grid-template-columns: 1fr; }
@@ -75,7 +133,7 @@
   <div class="wrap">
     <div>
       <div class="brand"><img src="images/icon.png" alt="" width="48" height="48"> Octo <a class="lang" href="fr/" hreflang="fr">Français</a></div>
-      <h1>Learn scuba theory, a few minutes a day</h1>
+      <h1>Scuba diving theory, a few minutes a day</h1>
       <p>Open Water Diver, Advanced Open Water, Rescue Diver and Divemaster: short lessons, quizzes that explain, spaced reviews, practice exams and a Mega Quiz for dive club nights.</p>
       <a class="cta" href="#levels">Coming soon to the App Store</a>
       <p class="note">Unofficial app. Not affiliated with or endorsed by PADI.</p>
@@ -110,7 +168,19 @@
     </div>
   </section>
 
-  <section>
+  <section id="topics">
+    <div class="wrap">
+      <h2>What you review</h2>
+      <div class="grid grid4">
+        <div class="card"><h3>Open Water Diver</h3><p>Scuba gear and the pre-dive check, pressure and equalizing, buoyancy and weighting, air consumption, safety stops, out-of-air options, decompression sickness and nitrogen narcosis, dive computers and no-decompression limits, dive planning and flying after diving.</p></div>
+        <div class="card"><h3>Advanced Open Water</h3><p>Deep diving and narcosis, underwater navigation with a compass and natural references, buoyancy and trim, night, wreck, drift and boat dives, enriched air nitrox, search and recovery, dry suit diving.</p></div>
+        <div class="card"><h3>Rescue Diver</h3><p>Self-rescue, stress and panic, tired or panicked divers at the surface, missing diver procedures, unresponsive divers, rescue breaths in the water, exits, first aid and oxygen, emergency action plans.</p></div>
+        <div class="card"><h3>Divemaster</h3><p>Dive physics (Boyle’s, Charles’s, Dalton’s and Henry’s laws, Archimedes’ principle), physiology and decompression theory, equipment, dive briefings, supervising certified divers, assisting with training, mapping a dive site and managing risk.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#fff">
     <div class="wrap mascot">
       <img src="images/mascot.png" alt="Octo’s octopus mascot, dive mask pushed up on its head" width="160" height="160">
       <div>
@@ -134,6 +204,7 @@
     <div class="wrap">
       <h2>Questions</h2>
       <details><summary>Is Octo an official PADI app?</summary><p>No. Octo is an independent app, not affiliated with or endorsed by PADI. It doesn’t replace your instructor or your training in the water: when in doubt, your instructor’s word comes first.</p></details>
+      <details><summary>What does Octo cover?</summary><p>The theory of four courses: Open Water Diver, Advanced Open Water, Rescue Diver and Divemaster. 62 lessons, 372 quiz questions, 130 exam scenarios and a 300-question Mega Quiz, in meters and bar or feet and psi.</p></details>
       <details><summary>Do I need an account?</summary><p>No. Your progress stays on your iPhone, with no account and no server.</p></details>
       <details><summary>Is Octo free?</summary><p>Yes: lessons, quizzes, reviews and practice exams are free, with a banner ad that never appears during a question. Octo Pro (one-time purchase) adds the Mega Quiz and removes all ads.</p></details>
       <details><summary>Which languages?</summary><p>English and French. Octo follows your iPhone’s language.</p></details>
