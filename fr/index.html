@@ -3,26 +3,84 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Octo · Théorie plongée, de l’Open Water au Divemaster</title>
-<meta name="description" content="Octo, l’app iPhone pour réviser la théorie de la plongée de l’Open Water Diver au Divemaster : leçons courtes, quiz corrigés, révisions espacées, un examen blanc par niveau et un Méga Quiz pour les soirées du club.">
+<title>Octo · Théorie de la plongée sous-marine, quiz et examen blanc</title>
+<meta name="description" content="App iPhone pour réviser la théorie de la plongée sous-marine, de l’Open Water Diver au Divemaster : leçons courtes, quiz corrigés et examens blancs.">
 <link rel="canonical" href="https://prunob.github.io/octo/fr/">
 <link rel="alternate" hreflang="en" href="https://prunob.github.io/octo/">
 <link rel="alternate" hreflang="fr" href="https://prunob.github.io/octo/fr/">
+<link rel="alternate" hreflang="x-default" href="https://prunob.github.io/octo/">
+<meta name="apple-itunes-app" content="app-id=6832103175">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Octo · Théorie plongée, de l’Open Water au Divemaster">
+<meta property="og:url" content="https://prunob.github.io/octo/fr/">
+<meta property="og:site_name" content="Octo">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="Octo · Théorie de la plongée sous-marine, de l’Open Water au Divemaster">
 <meta property="og:description" content="Leçons courtes, quiz corrigés, révisions espacées, examens blancs et un Méga Quiz pour les soirées du club.">
-<meta property="og:image" content="../images/fr-01-home.jpg">
+<meta property="og:image" content="https://prunob.github.io/octo/images/fr-01-home.jpg">
 <link rel="icon" href="../images/icon.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "name": "Octo · Théorie plongée",
+  "url": "https://prunob.github.io/octo/fr/",
+  "image": "https://prunob.github.io/octo/images/icon.png",
+  "screenshot": "https://prunob.github.io/octo/images/fr-01-home.jpg",
+  "author": { "@type": "Person", "name": "Bruno Pennes" },
   "operatingSystem": "iOS 26",
   "applicationCategory": "EducationalApplication",
   "inLanguage": ["en", "fr"],
   "description": "Réviser la théorie de la plongée de l’Open Water Diver au Divemaster : leçons, quiz corrigés, révisions espacées, examens blancs et un Méga Quiz en équipes.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Octo est-elle une app officielle PADI ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non. Octo est une app indépendante, ni affiliée à PADI, ni approuvée par PADI. Elle ne remplace ni ton instructeur ni ta formation dans l’eau : en cas de doute, c’est la consigne de ton instructeur qui compte."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Que couvre Octo ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La théorie de quatre cursus : Open Water Diver, Advanced Open Water, Rescue Diver et Divemaster. 62 leçons, 372 questions de quiz, 130 mises en situation d’examen et un Méga Quiz de 300 questions, en mètres et bars ou en pieds et psi."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Faut-il un compte ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non. Ta progression reste sur ton iPhone, sans compte ni serveur."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Octo est-elle gratuite ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui : leçons, quiz, révisions et examens blancs sont gratuits, avec un bandeau publicitaire qui n’apparaît jamais pendant une question. Octo Pro (achat unique) ajoute le Méga Quiz et retire toute publicité."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "En quelles langues ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Français et anglais. Octo suit la langue de ton iPhone."
+   }
+  }
+ ]
 }
 </script>
 <style>
@@ -63,6 +121,7 @@
   footer { background: var(--nuit); color: #C9D3E6; font-size: 14px; }
   footer .wrap { padding-block: 28px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; }
   footer a { color: #F2F6FC; }
+  .grid4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   @media (max-width: 760px) {
     header .wrap, .mascot { grid-template-columns: 1fr; }
     .grid, .shots { grid-template-columns: 1fr; }
@@ -75,7 +134,7 @@
   <div class="wrap">
     <div>
       <div class="brand"><img src="../images/icon.png" alt="" width="48" height="48"> Octo <a class="lang" href="../" hreflang="en">English</a></div>
-      <h1>La théorie de la plongée, quelques minutes par jour</h1>
+      <h1>La théorie de la plongée sous-marine, quelques minutes par jour</h1>
       <p>Open Water Diver, Advanced Open Water, Rescue Diver et Divemaster : leçons courtes, quiz corrigés, révisions espacées, examens blancs et un Méga Quiz pour les soirées du club.</p>
       <a class="cta" href="#levels">Bientôt sur l’App Store</a>
       <p class="note">App non officielle. Ni affiliée à PADI, ni approuvée par PADI.</p>
@@ -110,7 +169,19 @@
     </div>
   </section>
 
-  <section>
+  <section id="topics">
+    <div class="wrap">
+      <h2>Ce que tu révises</h2>
+      <div class="grid grid4">
+        <div class="card"><h3>Open Water Diver</h3><p>Le matériel et la vérification avec ton binôme, la pression et l’équilibrage, la flottabilité et le lestage, la consommation d’air, le palier de sécurité, la panne d’air, l’accident de décompression et la narcose, les ordinateurs et les limites de non-décompression, le plan de plongée et l’avion après la plongée.</p></div>
+        <div class="card"><h3>Advanced Open Water</h3><p>La plongée profonde et la narcose, la navigation au compas et aux repères naturels, la flottabilité et l’assiette, les plongées de nuit, sur épave, dérivantes et du bateau, le nitrox, la recherche et le relevage, la combinaison étanche.</p></div>
+        <div class="card"><h3>Rescue Diver</h3><p>Se sauver soi-même, le stress et la panique, le plongeur fatigué ou paniqué en surface, le plongeur disparu, le plongeur inconscient, les insufflations dans l’eau, la sortie de l’eau, les premiers secours et l’oxygène, le plan d’urgence.</p></div>
+        <div class="card"><h3>Divemaster</h3><p>La physique de la plongée (lois de Boyle-Mariotte, Charles, Dalton et Henry, principe d’Archimède), la physiologie et la théorie de la décompression, l’équipement, le briefing, l’encadrement de plongeurs certifiés, l’assistance en formation, la cartographie d’un site et la gestion des risques.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#fff">
     <div class="wrap mascot">
       <img src="../images/mascot.png" alt="La pieuvre d’Octo, masque relevé sur la tête" width="160" height="160">
       <div>
@@ -134,6 +205,7 @@
     <div class="wrap">
       <h2>Questions fréquentes</h2>
       <details><summary>Octo est-elle une app officielle PADI ?</summary><p>Non. Octo est une app indépendante, ni affiliée à PADI, ni approuvée par PADI. Elle ne remplace ni ton instructeur ni ta formation dans l’eau : en cas de doute, c’est la consigne de ton instructeur qui compte.</p></details>
+      <details><summary>Que couvre Octo ?</summary><p>La théorie de quatre cursus : Open Water Diver, Advanced Open Water, Rescue Diver et Divemaster. 62 leçons, 372 questions de quiz, 130 mises en situation d’examen et un Méga Quiz de 300 questions, en mètres et bars ou en pieds et psi.</p></details>
       <details><summary>Faut-il un compte ?</summary><p>Non. Ta progression reste sur ton iPhone, sans compte ni serveur.</p></details>
       <details><summary>Octo est-elle gratuite ?</summary><p>Oui : leçons, quiz, révisions et examens blancs sont gratuits, avec un bandeau publicitaire qui n’apparaît jamais pendant une question. Octo Pro (achat unique) ajoute le Méga Quiz et retire toute publicité.</p></details>
       <details><summary>En quelles langues ?</summary><p>Français et anglais. Octo suit la langue de ton iPhone.</p></details>
