@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Octo · Théorie plongée, de l’Open Water au Divemaster</title>
+<meta name="description" content="Octo, l’app iPhone pour réviser la théorie de la plongée de l’Open Water Diver au Divemaster : leçons courtes, quiz corrigés, révisions espacées, un examen blanc par niveau et un Méga Quiz pour les soirées du club.">
+<link rel="canonical" href="https://prunob.github.io/octo/fr/">
+<link rel="alternate" hreflang="en" href="https://prunob.github.io/octo/">
+<link rel="alternate" hreflang="fr" href="https://prunob.github.io/octo/fr/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Octo · Théorie plongée, de l’Open Water au Divemaster">
+<meta property="og:description" content="Leçons courtes, quiz corrigés, révisions espacées, examens blancs et un Méga Quiz pour les soirées du club.">
+<meta property="og:image" content="../images/fr-01-home.jpg">
+<link rel="icon" href="../images/icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Octo · Théorie plongée",
+  "operatingSystem": "iOS 26",
+  "applicationCategory": "EducationalApplication",
+  "inLanguage": ["en", "fr"],
+  "description": "Réviser la théorie de la plongée de l’Open Water Diver au Divemaster : leçons, quiz corrigés, révisions espacées, examens blancs et un Méga Quiz en équipes.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+}
+</script>
+<style>
+  :root { --nuit: #001A4E; --corail: #FC654E; --bleu: #1B4FBF; --fond: #F5F8FC; --texte2: #4A5D7E; --trait: #D5DFEC; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, sans-serif; color: var(--nuit); background: var(--fond); line-height: 1.6; }
+  h1, h2, h3 { font-family: ui-rounded, "SF Pro Rounded", -apple-system, system-ui, sans-serif; line-height: 1.15; text-wrap: balance; margin: 0 0 .4em; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right)); }
+  header { background: linear-gradient(180deg, #1C7DBD, #0E5996 45%, var(--nuit)); color: #F2F6FC; }
+  header .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; padding-block: 48px 44px; }
+  header h1 { font-size: clamp(34px, 6vw, 56px); }
+  header p { font-size: 19px; max-width: 36ch; opacity: .95; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; margin-bottom: 18px; }
+  .brand img { width: 48px; height: 48px; border-radius: 12px; }
+  .lang { margin-left: auto; font-weight: 600; color: #F2F6FC; }
+  .cta { display: inline-block; margin-top: 12px; background: #F2F6FC; color: var(--nuit); padding: 13px 22px; border-radius: 14px; font-weight: 700; text-decoration: none; }
+  .note { font-size: 13px; opacity: .85; margin-top: 14px; }
+  .phone { max-width: 300px; justify-self: center; border-radius: 36px; border: 8px solid #04101E; box-shadow: 0 24px 60px -24px rgba(0,0,0,.6); overflow: hidden; }
+  .phone img { display: block; width: 100%; }
+  section { padding-block: 52px; }
+  section h2 { font-size: clamp(26px, 4vw, 36px); }
+  .lead { color: var(--texte2); max-width: 64ch; font-size: 17px; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+  .card { background: #fff; border: 1px solid var(--trait); border-radius: 20px; padding: 20px; }
+  .card h3 { font-size: 20px; }
+  .card p { margin: 0; color: var(--texte2); }
+  .levels { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .levels span { background: #E3EAFA; border-radius: 999px; padding: 6px 14px; font-weight: 600; }
+  .shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; border-radius: 22px; border: 1px solid var(--trait); }
+  .shots figcaption { text-align: center; font-weight: 600; margin-top: 8px; }
+  .mega { background: #FEF0EC; }
+  .mascot { display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center; }
+  .mascot img { width: 160px; }
+  details { background: #fff; border: 1px solid var(--trait); border-radius: 16px; padding: 14px 18px; margin-top: 10px; }
+  summary { font-weight: 700; cursor: pointer; }
+  footer { background: var(--nuit); color: #C9D3E6; font-size: 14px; }
+  footer .wrap { padding-block: 28px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; }
+  footer a { color: #F2F6FC; }
+  @media (max-width: 760px) {
+    header .wrap, .mascot { grid-template-columns: 1fr; }
+    .grid, .shots { grid-template-columns: 1fr; }
+    .phone { max-width: 240px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div>
+      <div class="brand"><img src="../images/icon.png" alt="" width="48" height="48"> Octo <a class="lang" href="../" hreflang="en">English</a></div>
+      <h1>La théorie de la plongée, quelques minutes par jour</h1>
+      <p>Open Water Diver, Advanced Open Water, Rescue Diver et Divemaster : leçons courtes, quiz corrigés, révisions espacées, examens blancs et un Méga Quiz pour les soirées du club.</p>
+      <a class="cta" href="#levels">Bientôt sur l’App Store</a>
+      <p class="note">App non officielle. Ni affiliée à PADI, ni approuvée par PADI.</p>
+    </div>
+    <div class="phone"><img src="../images/fr-01-home.jpg" alt="Accueil d’Octo : la pieuvre, la révision du jour et une série de 5 jours" width="450" height="978"></div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Comment ça marche</h2>
+      <p class="lead">Chaque niveau est découpé en leçons de 3 à 6 minutes, suivies d’un quiz corrigé de six questions. Les questions ratées reviennent dans la révision du jour, puis à intervalles de plus en plus longs.</p>
+      <div class="grid">
+        <div class="card"><h3>Leçons courtes</h3><p>Une idée clé, quelques fiches et trois points à retenir, avec des schémas pour la pression, la consommation d’air, les pressions partielles et le profil de plongée.</p></div>
+        <div class="card"><h3>Des quiz qui expliquent</h3><p>La bonne réponse, pourquoi, et la fiche à relire. Les questions de sécurité sont signalées et reviennent plus souvent.</p></div>
+        <div class="card"><h3>Mètres ou pieds</h3><p>Mètres et bars, ou pieds et psi. Octo prend les unités de ta région et tu peux en changer à tout moment.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="levels" style="background:#fff">
+    <div class="wrap">
+      <h2>De l’Open Water au Divemaster</h2>
+      <p class="lead">62 leçons, 372 questions et 130 mises en situation d’examen. Les leçons couvrent les thèmes des cursus PADI Open Water Diver, Advanced Open Water, Rescue Diver et Divemaster. Elles ont été écrites pour Octo à partir des programmes publics et de références de sécurité en plongée, et vérifiées sur des sources publiques ; elles n’ont pas encore été relues par un instructeur.</p>
+      <div class="levels"><span>Open Water Diver</span><span>Advanced Open Water</span><span>Rescue Diver</span><span>Divemaster</span></div>
+      <div class="shots">
+        <figure><img src="../images/fr-02-lesson-card.jpg" alt="Une fiche de leçon sur la pression et le volume" loading="lazy" width="450" height="978"><figcaption>Des leçons courtes</figcaption></figure>
+        <figure><img src="../images/fr-03-correction.jpg" alt="Une question corrigée avec l’explication et la pieuvre" loading="lazy" width="450" height="978"><figcaption>Chaque erreur expliquée</figcaption></figure>
+        <figure><img src="../images/fr-07-levels.jpg" alt="Les quatre niveaux d’Octo avec leur profondeur" loading="lazy" width="450" height="978"><figcaption>Quatre niveaux</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap mascot">
+      <img src="../images/mascot.png" alt="La pieuvre d’Octo, masque relevé sur la tête" width="160" height="160">
+      <div>
+        <h2>Voici Octo</h2>
+        <p class="lead">Une pieuvre au masque relevé sur la tête. Calme pendant que tu apprends, curieuse quand tu ne sais pas, un petit nuage d’encre quand tu te trompes, et des flammes dans les yeux pour un sans-faute.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mega">
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:center">
+      <div>
+        <h2>Le Méga Quiz, pour les soirées du club <small style="font-size:.55em;color:#B5371F">Octo Pro</small></h2>
+        <p class="lead">300 questions de l’Open Water au Divemaster, plus la vie marine, les sites de plongée et l’histoire de la plongée. 1 à 4 équipes, 10, 20 ou 30 questions, chrono de 30 secondes au choix. Affiche la question sur la télé du club, révèle la réponse et coche les équipes qui l’ont trouvée ; Octo compte les points et affiche le podium. Inclus dans Octo Pro.</p>
+      </div>
+      <div class="phone" style="max-width:260px"><img src="../images/fr-06-mega-question.jpg" alt="Une question du Méga Quiz en mode animateur, avec les scores des équipes" loading="lazy" width="450" height="978"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Questions fréquentes</h2>
+      <details><summary>Octo est-elle une app officielle PADI ?</summary><p>Non. Octo est une app indépendante, ni affiliée à PADI, ni approuvée par PADI. Elle ne remplace ni ton instructeur ni ta formation dans l’eau : en cas de doute, c’est la consigne de ton instructeur qui compte.</p></details>
+      <details><summary>Faut-il un compte ?</summary><p>Non. Ta progression reste sur ton iPhone, sans compte ni serveur.</p></details>
+      <details><summary>Octo est-elle gratuite ?</summary><p>Oui : leçons, quiz, révisions et examens blancs sont gratuits, avec un bandeau publicitaire qui n’apparaît jamais pendant une question. Octo Pro (achat unique) ajoute le Méga Quiz et retire toute publicité.</p></details>
+      <details><summary>En quelles langues ?</summary><p>Français et anglais. Octo suit la langue de ton iPhone.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Bruno Pennes · Octo, app non officielle</span>
+    <span><a href="confidentialite.html">Confidentialité</a> · <a href="assistance.html">Assistance</a> · <a href="../">English</a></span>
+  </div>
+</footer>
+</body>
+</html>
