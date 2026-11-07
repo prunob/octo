@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Octo · Scuba Theory, from Open Water to Divemaster</title>
+<meta name="description" content="Octo, the iPhone app to review scuba theory from Open Water Diver to Divemaster: short lessons, quizzes that explain, spaced reviews, a practice exam for each level and a Mega Quiz for dive club nights.">
+<link rel="canonical" href="https://prunob.github.io/octo/">
+<link rel="alternate" hreflang="en" href="https://prunob.github.io/octo/">
+<link rel="alternate" hreflang="fr" href="https://prunob.github.io/octo/fr/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Octo · Scuba theory, from Open Water to Divemaster">
+<meta property="og:description" content="Short lessons, quizzes that explain, spaced reviews, practice exams and a Mega Quiz for dive club nights.">
+<meta property="og:image" content="images/en-01-home.jpg">
+<link rel="icon" href="images/icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Octo · Scuba Theory",
+  "operatingSystem": "iOS 26",
+  "applicationCategory": "EducationalApplication",
+  "inLanguage": ["en", "fr"],
+  "description": "Review scuba theory from Open Water Diver to Divemaster: lessons, quizzes with explanations, spaced reviews, practice exams and a team Mega Quiz.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<style>
+  :root { --nuit: #001A4E; --corail: #FC654E; --bleu: #1B4FBF; --fond: #F5F8FC; --texte2: #4A5D7E; --trait: #D5DFEC; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, sans-serif; color: var(--nuit); background: var(--fond); line-height: 1.6; }
+  h1, h2, h3 { font-family: ui-rounded, "SF Pro Rounded", -apple-system, system-ui, sans-serif; line-height: 1.15; text-wrap: balance; margin: 0 0 .4em; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right)); }
+  header { background: linear-gradient(180deg, #1C7DBD, #0E5996 45%, var(--nuit)); color: #F2F6FC; }
+  header .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; padding-block: 48px 44px; }
+  header h1 { font-size: clamp(34px, 6vw, 56px); }
+  header p { font-size: 19px; max-width: 36ch; opacity: .95; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; margin-bottom: 18px; }
+  .brand img { width: 48px; height: 48px; border-radius: 12px; }
+  .lang { margin-left: auto; font-weight: 600; color: #F2F6FC; }
+  .cta { display: inline-block; margin-top: 12px; background: #F2F6FC; color: var(--nuit); padding: 13px 22px; border-radius: 14px; font-weight: 700; text-decoration: none; }
+  .note { font-size: 13px; opacity: .85; margin-top: 14px; }
+  .phone { max-width: 300px; justify-self: center; border-radius: 36px; border: 8px solid #04101E; box-shadow: 0 24px 60px -24px rgba(0,0,0,.6); overflow: hidden; }
+  .phone img { display: block; width: 100%; }
+  section { padding-block: 52px; }
+  section h2 { font-size: clamp(26px, 4vw, 36px); }
+  .lead { color: var(--texte2); max-width: 64ch; font-size: 17px; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+  .card { background: #fff; border: 1px solid var(--trait); border-radius: 20px; padding: 20px; }
+  .card h3 { font-size: 20px; }
+  .card p { margin: 0; color: var(--texte2); }
+  .levels { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .levels span { background: #E3EAFA; border-radius: 999px; padding: 6px 14px; font-weight: 600; }
+  .shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; border-radius: 22px; border: 1px solid var(--trait); }
+  .shots figcaption { text-align: center; font-weight: 600; margin-top: 8px; }
+  .mega { background: #FEF0EC; }
+  .mascot { display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center; }
+  .mascot img { width: 160px; }
+  details { background: #fff; border: 1px solid var(--trait); border-radius: 16px; padding: 14px 18px; margin-top: 10px; }
+  summary { font-weight: 700; cursor: pointer; }
+  footer { background: var(--nuit); color: #C9D3E6; font-size: 14px; }
+  footer .wrap { padding-block: 28px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; }
+  footer a { color: #F2F6FC; }
+  @media (max-width: 760px) {
+    header .wrap, .mascot { grid-template-columns: 1fr; }
+    .grid, .shots { grid-template-columns: 1fr; }
+    .phone { max-width: 240px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div>
+      <div class="brand"><img src="images/icon.png" alt="" width="48" height="48"> Octo <a class="lang" href="fr/" hreflang="fr">Français</a></div>
+      <h1>Learn scuba theory, a few minutes a day</h1>
+      <p>Open Water Diver, Advanced Open Water, Rescue Diver and Divemaster: short lessons, quizzes that explain, spaced reviews, practice exams and a Mega Quiz for dive club nights.</p>
+      <a class="cta" href="#levels">Coming soon to the App Store</a>
+      <p class="note">Unofficial app. Not affiliated with or endorsed by PADI.</p>
+    </div>
+    <div class="phone"><img src="images/en-01-home.jpg" alt="Octo home screen: the octopus mascot, today’s review and a 5-day streak" width="450" height="978"></div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>How Octo works</h2>
+      <p class="lead">Each level is split into 3- to 6-minute lessons, each followed by a six-question quiz with answers. Questions you miss come back in today’s review, then at longer and longer intervals.</p>
+      <div class="grid">
+        <div class="card"><h3>Short lessons</h3><p>One key idea, a few cards and three takeaways, with diagrams for pressure, air consumption, partial pressures and the dive profile.</p></div>
+        <div class="card"><h3>Quizzes that explain</h3><p>The right answer, why, and the card to reread. Key safety questions are marked and come back more often.</p></div>
+        <div class="card"><h3>Meters or feet</h3><p>Meters and bar, or feet and psi. Octo picks your region’s units and you can switch at any time.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="levels" style="background:#fff">
+    <div class="wrap">
+      <h2>From Open Water to Divemaster</h2>
+      <p class="lead">62 lessons, 372 questions and 130 exam scenarios. The lessons cover the topics of the PADI Open Water Diver, Advanced Open Water, Rescue Diver and Divemaster courses. They were written for Octo from public course outlines and diving safety references, and checked against public sources; they have not yet been reviewed by an instructor.</p>
+      <div class="levels"><span>Open Water Diver</span><span>Advanced Open Water</span><span>Rescue Diver</span><span>Divemaster</span></div>
+      <div class="shots">
+        <figure><img src="images/en-02-lesson-card.jpg" alt="A lesson card on pressure and volume" loading="lazy" width="450" height="978"><figcaption>Short lessons</figcaption></figure>
+        <figure><img src="images/en-03-correction.jpg" alt="A corrected question with the explanation and the octopus mascot" loading="lazy" width="450" height="978"><figcaption>Every mistake explained</figcaption></figure>
+        <figure><img src="images/en-07-levels.jpg" alt="The four levels of Octo with their depth" loading="lazy" width="450" height="978"><figcaption>Four levels</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap mascot">
+      <img src="images/mascot.png" alt="Octo’s octopus mascot, dive mask pushed up on its head" width="160" height="160">
+      <div>
+        <h2>Meet Octo</h2>
+        <p class="lead">An octopus with its mask pushed up on its head. Calm while you learn, curious when you don’t know, a little puff of ink when you get it wrong, and flames in its eyes for a perfect score.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mega">
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:center">
+      <div>
+        <h2>The Mega Quiz, for dive club nights <small style="font-size:.55em;color:#B5371F">Octo Pro</small></h2>
+        <p class="lead">300 questions from Open Water to Divemaster, plus marine life, dive sites and diving history. 1 to 4 teams, 10, 20 or 30 questions, optional 30-second timer. Show the question on the club’s TV, reveal the answer and tick the teams that got it; Octo keeps score and shows the podium. Included in Octo Pro.</p>
+      </div>
+      <div class="phone" style="max-width:260px"><img src="images/en-06-mega-question.jpg" alt="A Mega Quiz question in host mode, with the teams’ scores" loading="lazy" width="450" height="978"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Questions</h2>
+      <details><summary>Is Octo an official PADI app?</summary><p>No. Octo is an independent app, not affiliated with or endorsed by PADI. It doesn’t replace your instructor or your training in the water: when in doubt, your instructor’s word comes first.</p></details>
+      <details><summary>Do I need an account?</summary><p>No. Your progress stays on your iPhone, with no account and no server.</p></details>
+      <details><summary>Is Octo free?</summary><p>Yes: lessons, quizzes, reviews and practice exams are free, with a banner ad that never appears during a question. Octo Pro (one-time purchase) adds the Mega Quiz and removes all ads.</p></details>
+      <details><summary>Which languages?</summary><p>English and French. Octo follows your iPhone’s language.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Bruno Pennes · Octo, unofficial app</span>
+    <span><a href="privacy.html">Privacy</a> · <a href="support.html">Support</a> · <a href="fr/">Français</a></span>
+  </div>
+</footer>
+</body>
+</html>
